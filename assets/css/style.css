@@ -1,0 +1,12 @@
+ html {
+     background: url(/Users/rachbaut/Documents/coding_bootcamp/Homework/unit-4-game/assets/images/gray_background.jpeg) no-repeat center center fixed;
+ }
+
+ h1 {
+     font-size: 65px;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 20px;
+     color: white;
+ }
+
