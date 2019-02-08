@@ -1,6 +1,6 @@
  html {
      background: url(/Users/rachbaut/Documents/coding_bootcamp/Homework/unit-4-game/assets/images/gray_background.jpeg) no-repeat center center fixed;
-     opacity: 0.5;
+     
  }
 
  h1 {
@@ -11,3 +11,15 @@
      color: white;
  }
 
+ p {
+     text-align: center;
+     margin: 25px;
+     font-size: 20px;
+     color: black;
+ }
+
+ #total-score {
+     font-size: 25px;
+     color:black;
+     text-align: center;
+ }
