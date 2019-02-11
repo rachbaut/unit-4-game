@@ -1,14 +1,19 @@
- html {
-     background: url(/Users/rachbaut/Documents/coding_bootcamp/Homework/unit-4-game/assets/images/gray_background.jpeg) no-repeat center center fixed;
-     
- }
+/* Body Styles */
+
+html {
+    background: wheat;
+}
+
+body {
+    background: wheat;
+}
 
  h1 {
      font-size: 65px;
      font-weight: bold;
      text-align: center;
      margin-top: 20px;
-     color: white;
+     color:black;
  }
 
  p {
@@ -23,3 +28,13 @@
      color:black;
      text-align: center;
  }
+
+ #info-box {
+     background: white;
+     margin: 25px;
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+
+ 

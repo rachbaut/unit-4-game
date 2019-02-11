@@ -3,16 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <title>Crystals Collector</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 
 </head>
 
 
 <body>
+    
     <div>
         <h1>Crystals Collector!</h1>
     </div>
@@ -20,7 +23,8 @@
     <div id="info-box">
         <p>At the start of this game a random number will be given to you.</p>
         <p>By clicking on one of the four crystals below you will add a certain amount of points your score.</p>
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes
+            above the random number.</p>
         <p>Each crystal has a hidden value and will only show their value once you click on the crystal.</p>
         <p>Everytime the game restarts the values of each crystal will change.</p>
     </div>
@@ -32,15 +36,32 @@
         <div id="win-lose"></div>
     </div>
 
-    <div class="crystals">
-        <!--This is where the crystals will be displayed-->
-        <div id="crystal-area"></div>
-         <!--Score will be shown here-->
-        <div id="total-score">Total score:</div>
-        <div id="score-area"></div>
-
+    <!--This is where the crystals will be displayed-->
+    <div class="row justify-content-center" id="crystals">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center" id="crystals">
+            <button class="ruby">
+                <img src="assets/images/ruby.jpg" width="100px" height="100px" alt="ruby">
+            </button>
+            <button class="sapphire">
+                <img src="assets/images/sapphire.jpg" width="100px" height="100px" alt="sapphire">
+            </button>
+            <button class="teardrop">
+                <img src="assets/images/teardrop.jpg" width="100px" height="100px" alt="teardrop">
+            </button>
+            <button class="tourmaline">
+                <img src="assets/images/tourmaline.jpg" width="100px" height="100px" alt="tourmaline">
+            </button>
+        </div>
+    <div class="col-md-3"></div>
     </div>
+    <!--Score will be shown here-->
+    <div id="total-score">Total score:</div>
+    <div id="score-area"></div>
 
+
+
+    <!--This where the js file is linked-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
