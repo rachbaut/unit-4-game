@@ -1,37 +1,68 @@
 $(document).ready(function() {
 
-    //number manipulated by clicking on the crystals
-   
+    // var randNum = randomNumGen(); //is this a function in a variable?
 
-    //this is a random number generated to get us to the the target number
-
-    var randNum = randomNumGen(); //is this a function in a variable?
-
-    //setting up rest of variables
+    //setting up variables 
     var win = 0;
     var lose = 0;
-    var crystals = 0;
+    var currentCrystalNum = 0;
+
+    var ruby = 0;
+    var sapphire = 0;
+    var teardrop = 0;
+    var tourmaline = 0;
+
+    // this function will start the game/restart the game
+    function startGame() {
 
 
+    }
 
-    // this will be random number generators for the crystals button
+    // this the function that will give us the first random number to start the game and match that number
+    function randGameNum() {
+       gameNum =  (Math.floor(Math.random() * 101) + 19);
+       $("#random-num").append(currentCrystalNum);
+    };
+
+    // This be the random number generators for the crystals
+    
+    function randCrystalNum() {
+        ruby = (Math.floor(Math.random() * 11) + 1),
+        sapphire = (Math.floor(Math.random() * 11) + 1),
+        teardrop =  (Math.floor(Math.random() * 11) +1),
+        tourmaline = (Math.floor(Math.random() * 11) +1)
+    };
+
+    // this will activate the numbers for the crystals when clicked
 
     $(".ruby").on("click", function() {
-        alert("It is working.");
+        currentCrystalNum+=ruby;
+        $("#score-area").empty();
+        $("#score-area").append(currentCrystalNum);
+        
     });
 
     $(".sapphire").on("click", function() {
-        alert("It is working.");
+        currentCrystalNum+=sapphire;
+        $("#score-area").empty();
+        $("#score-area").append(currentCrystalNum);
     });
 
     $(".teardrop").on("click", function() {
-        alert("It is working.");
+        currentCrystalNum+=teardrop;
+        $("#score-area").empty();
+        $("#score-area").append(currentCrystalNum);
     });
 
     $(".tourmaline").on("click", function() {
-        alert("It is working.");
+        currentCrystalNum+=tourmaline;
+        $("#score-area").empty();
+        $("#score-area").append(currentCrystalNum);
     });
 
-
+    // function is created to compare current crystal values with the goal number to see if it goes over the goal number
+    function compareNum() {
+        
+    }
 
 });
