@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    // var randNum = randomNumGen(); //is this a function in a variable?
-
     //setting up variables 
     var win = 0;
     var lose = 0;
@@ -14,14 +12,18 @@ $(document).ready(function() {
 
     // this function will start the game/restart the game
     function startGame() {
-
-
+        $("#random-num").empty();
+        randGameNum();
+        currentCrystalNum = 0;
+        randCrystalNum();
+        $("#score-area").empty();
+        $("#score-area").append(currentCrystalNum); 
     }
 
     // this the function that will give us the first random number to start the game and match that number
     function randGameNum() {
        gameNum =  (Math.floor(Math.random() * 101) + 19);
-       $("#random-num").append(currentCrystalNum);
+       $("#random-num").append(gameNum);
     };
 
     // This be the random number generators for the crystals
@@ -39,30 +41,48 @@ $(document).ready(function() {
         currentCrystalNum+=ruby;
         $("#score-area").empty();
         $("#score-area").append(currentCrystalNum);
-        
+        compareNum();
     });
 
     $(".sapphire").on("click", function() {
         currentCrystalNum+=sapphire;
         $("#score-area").empty();
         $("#score-area").append(currentCrystalNum);
+        compareNum();
     });
 
     $(".teardrop").on("click", function() {
         currentCrystalNum+=teardrop;
         $("#score-area").empty();
         $("#score-area").append(currentCrystalNum);
+        compareNum();
     });
 
     $(".tourmaline").on("click", function() {
         currentCrystalNum+=tourmaline;
         $("#score-area").empty();
         $("#score-area").append(currentCrystalNum);
+        compareNum();
     });
 
     // function is created to compare current crystal values with the goal number to see if it goes over the goal number
     function compareNum() {
-        
-    }
+        if(currentCrystalNum === gameNum) {
+            win++
+            $("#win").empty();
+            $("#win").append(win);
+            alert("You win!");
+            startGame();
+        }
+        else if(currentCrystalNum > gameNum) {
+            lose++
+            $("#lose").empty();
+            $("#lose").append(lose);
+            alert("Sorry, you lost. :( ");
+            startGame();
+        }
+    };
 
-});
+    startGame();
+
+    });

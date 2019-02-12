@@ -1,7 +1,10 @@
-/* Body Styles */
+/* BACKGROUND COLOR AND HEADER STYLES */
 
 html {
     background: wheat;
+    margin-bottom: 65px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -23,17 +26,61 @@ body {
      color: black;
  }
 
+ .par1::first-letter {
+     font-size: 35px;
+ }
+
+/* BODY STYLES */
+
+#score-screen {
+    margin: 20px;
+}
+
+#RN {
+    font-size: 27px;
+}
+
+#W {
+    font-size: 27px;
+}
+
+#L {
+    font-size: 27px;
+}
+
+#random-num {
+    font-size: 30px;
+}
+
+#win {
+    font-size: 30px;
+    color: green;
+}
+
+#lose {
+    font-size: 30px;
+    color: red;
+}
+
  #total-score {
-     font-size: 25px;
+     font-size: 30px;
      color:black;
      text-align: center;
+     margin-top: 30px;
+ }
+
+ #score-area {
+     text-align: center;
+     margin-top: 20px;
+     font-size: 30px;
  }
 
  #info-box {
-     background: white;
-     margin: 25px;
+     background: lightsalmon;
+     margin: 45px 95px;
      padding: 10px;
-     border-radius: 10px;
+     border-radius: 25px;
+     border: 2px solid black;
  }
 
 
