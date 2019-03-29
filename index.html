@@ -9,69 +9,81 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 
 </head>
 
 <body>
-
-    <div>
-        <h1>Crystals Collector <i class="fas fa-gem"></i></span>
-        </h1>
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>Crystal Collector</h1>
+            <!-- <i class="fas fa-gem"></i> -->
+        </div>
     </div>
 
-    <div id="info-box">
-        <p class="par1">At the start of this game a random goal number will be given to you.</p>
-        <p>By clicking on one of the four crystals below you will add a certain number of points to your score.</p>
-        <p>You win the game by matching your current number to the goal number first given to you at the beginning of
-            the game.</p>
-        <p>You lose the game if your current number goes above the goal number.</p>
-        <p>Each crystal has a hidden value and will only show their value once you click on the crystal.</p>
-        <p>Everytime the game restarts the values of each crystal will also change.</p>
+    <!--Start of content on page-->
+    <div class="row paragraph">
+        <div class="col-12 text-center justify-content-center" id="info-box">
+            <p class="par1">At the start of this game a random goal number will be given to you.
+                By clicking on one of the four crystals below you will add a certain number of points to your score.
+                You win the game by matching your current number to the goal number first given to you at the beginning of the game.</p>
+            <p>You lose the game if your current number goes above the goal number.
+                Each crystal has a hidden value and will only show their value once you click on the crystal.
+                Everytime the game restarts the values of each crystal will also change.</p>
+        </div>
     </div>
 
-    <div class="row justify-content-center" id="score-screen">
-        <div class="col-md-3"></div>
-        <div class="col-md-2 text-center" id="RN"> Goal Number: </div>
-        <div class="col-md-2 text-center" id="W"> Win: </div>
-        <div class="col-md-2 text-center" id="L"> Lose: </div>
-        <div class="col-md-3"></div>
-    </div>
-
-    <div class="row justify-content-center" id="score-screen">
-        <div class="col-md-3"></div>
-        <!--This is where the random numbers will be at-->
-        <div class="col-md-2 text-center" id="random-num"></div>
-        <!--This is where the win/lose outcome will be shown-->
-        <div class="col-md-2 text-center" id="win"></div>
-        <div class="col-md-2 text-center" id="lose"></div>
-        <div class="col-md-3"></div>
-    </div>
+     <!--Score will be shown here-->
+    <div id="total-score">Current Number: </div> 
+    <div id="score-area"></div>
 
     <!--This is where the crystals will be displayed-->
     <div class="row justify-content-center" id="crystals">
-        <div class="col-md-3"></div>
-        <div class="col-md-6 text-center" id="crystals">
+        <div class="col-sm-6 col-md-3 text-center">
             <button class="ruby">
-                <img src="assets/images/ruby.jpg" width="100px" height="100px" alt="ruby">
-            </button>
-            <button class="sapphire">
-                <img src="assets/images/sapphire.jpg" width="100px" height="100px" alt="sapphire">
-            </button>
-            <button class="teardrop">
-                <img src="assets/images/teardrop.jpg" width="100px" height="100px" alt="teardrop">
-            </button>
-            <button class="tourmaline">
-                <img src="assets/images/tourmaline.jpg" width="100px" height="100px" alt="tourmaline">
+                <img src="assets/images/ruby.png" width="100px" height="100px" alt="ruby">
             </button>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-sm-6 col-md-3 text-center">
+            <button class="sapphire">
+                <img src="assets/images/sapphire.png" width="100px" height="100px" alt="sapphire">
+            </button>
+        </div>
+        <div class="col-sm-6 col-md-3 text-center">
+            <button class="teardrop">
+                <img src="assets/images/teardrop.png" width="100px" height="100px" alt="teardrop">
+            </button>
+        </div>
+        <div class="col-sm-6 col-md-3 text-center">
+            <button class="tourmaline">
+                <img src="assets/images/tourmaline.png" width="100px" height="100px" alt="tourmaline">
+            </button>
+        </div>
     </div>
-    <!--Score will be shown here-->
-    <div id="total-score">Current Number: </div>
-    <div id="score-area"></div>
 
+    <!--Goal, win and lose numbers will be shown here-->
+    <div class="row justify-content-center text-center" id="score-screen">
+            <div class="col-md-3"></div>
+            <div class="col-md-2 text-center" id="RN"> Goal Num: </div>
+            <div class="col-md-2 text-center" id="W"> Win: </div>
+            <div class="col-md-2 text-center" id="L"> Lose: </div>
+            <div class="col-md-3"></div>
+        </div>
+    
+        <div class="row justify-content-center" id="score-screen">
+            <div class="col-md-3"></div>
+            <!--This is where the random numbers will be at-->
+            <div class="col-md-2 text-center" id="random-num"></div>
+            <!--This is where the win/lose outcome will be shown-->
+            <div class="col-md-2 text-center" id="win"></div>
+            <div class="col-md-2 text-center" id="lose"></div>
+            <div class="col-md-3"></div>
+        </div>
+  
+</div>
     <!--This where the js file is linked-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>

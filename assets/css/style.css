@@ -1,34 +1,45 @@
 /* BACKGROUND COLOR AND HEADER STYLES */
 
-html {
-    background: wheat;
-    margin-bottom: 65px;
-    margin-top: 50px;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    background: wheat;
+    background: url(../images/pinkcrystal.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: display !important;
 }
 
- h1 {
-     font-size: 65px;
-     font-weight: bold;
-     text-align: center;
-     margin-top: 20px;
-     color:black;
- }
+html {
+    font-family: 'Montserrat', sans-serif;
+}
 
- p {
-     text-align: center;
-     margin: 25px;
-     font-size: 20px;
-     color: black;
- }
+h1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: .5rem;
+}
 
- .par1::first-letter {
-     font-size: 35px;
- }
+p {
+    text-align: center;
+    margin: 25px;
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+.par1::first-letter {
+    font-size: 35px;
+    color: black;
+}
+
+.paragraph {
+    text-align: center;
+    align-content: center !important;
+}
 
 /* BODY STYLES */
 
@@ -62,26 +73,28 @@ body {
     color: red;
 }
 
- #total-score {
-     font-size: 30px;
-     color:black;
-     text-align: center;
-     margin-top: 30px;
- }
+#total-score {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
 
- #score-area {
-     text-align: center;
-     margin-top: 20px;
-     font-size: 30px;
- }
+#score-area {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 
- #info-box {
-     background: lightsalmon;
-     margin: 45px 95px;
-     padding: 10px;
-     border-radius: 25px;
-     border: 2px solid black;
- }
+#info-box {
+    background-color: rgb(255, 255, 255, 0.5); 
+    border-radius: 45px;
+    padding: 10px;
+    
+}
 
-
- 
+button {
+    background: none !important;
+    border: none !important;
+}

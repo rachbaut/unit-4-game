@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //setting up variables 
+    //setting up global variables 
     var win = 0;
     var lose = 0;
     var currentCrystalNum = 0;
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     $(".sapphire").on("click", function() {
         currentCrystalNum+=sapphire;
-        $("#score-area").empty();
+        $("#score-area").empty(); 
         $("#score-area").append(currentCrystalNum);
         compareNum();
     });
